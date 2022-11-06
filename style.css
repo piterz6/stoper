@@ -47,8 +47,19 @@ body {
   cursor: pointer;
   transition: color 0.3s;
 }
+.question {
+  padding: 5px;
+  transition: color 0.3s;
+}
+.brush {
+  padding: 5px;
+  transition: color 0.3s;
+}
 
-.info:hover {
+.question:hover {
+  color: var(--first-color);
+}
+.brush:hover {
   color: var(--first-color);
 }
 

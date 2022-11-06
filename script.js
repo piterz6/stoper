@@ -1,5 +1,5 @@
 //getting all needed elements
-const modalShow = document.querySelector(".info");
+const modalShow = document.querySelector(".question");
 const modal = document.querySelector(".modal-shadow");
 const closeModal = document.querySelector(".close");
 const startBtn = document.querySelector(".start");
@@ -10,6 +10,8 @@ const stopBtn = document.querySelector(".stop");
 const timeList = document.querySelector(".time-list");
 const historyBtn = document.querySelector(".history");
 const resetBtn = document.querySelector(".reset");
+//get change color button
+const brush = document.querySelector(".brush");
 //helper variable
 let counter;
 let minutes = 0;
@@ -82,10 +84,12 @@ const resetHandler = () => {
 //showing help info modal
 modalShow.addEventListener("click", () => {
   modal.style.display = "block";
+  modal.classList.add("modal-animation");
 });
 //hide help info modal
 closeModal.addEventListener("click", () => {
   modal.style.display = "none";
+  modal.classList.reomve("modal-animation");
 });
 //all events listeners - all functional buttons
 startBtn.addEventListener("click", startCount);
