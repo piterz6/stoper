@@ -12,6 +12,7 @@ const historyBtn = document.querySelector(".history");
 const resetBtn = document.querySelector(".reset");
 //get change color button
 const brush = document.querySelector(".brush");
+//element where color is changed as variable
 let root = document.documentElement;
 //change color all needed elements:
 const colorPanel = document.querySelector(".colors");
