@@ -12,6 +12,13 @@ const historyBtn = document.querySelector(".history");
 const resetBtn = document.querySelector(".reset");
 //get change color button
 const brush = document.querySelector(".brush");
+let root = document.documentElement;
+//change color all needed elements:
+const colorPanel = document.querySelector(".colors");
+//colors buttons:
+const colorOne = document.querySelector(".color-one");
+const colorTwo = document.querySelector(".color-two");
+const colorThree = document.querySelector(".color-three");
 //helper variable
 let counter;
 let minutes = 0;
@@ -99,4 +106,12 @@ historyBtn.addEventListener("click", historyHandler);
 resetBtn.addEventListener("click", resetHandler);
 modal.addEventListener("click", () => {
   modal.style.display = "none";
+});
+//show color pallete panel:
+brush.addEventListener("click", () => {
+  colorPanel.classList.toggle("move");
+});
+colorTwo.addEventListener("click", () => {
+  root.style.setProperty("--first-color", "rgb(2,223,41)");
+  console.log("faxvf");
 });
